@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人导航主页</title>
+    <title>🔞未成年人紧止进入</title>
+    <!-- Updated to Font Awesome 7.2.0 -->
     <link rel="stylesheet" href="./xiny/fontawesome/css/all.min.css">
     <link rel="icon" href="./xiny/favicon.ico">
     <style>
@@ -104,56 +105,17 @@
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            font-size: 5rem;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+            text-shadow: 5px 2px 10px rgb(86, 224, 201);
         }
 
         .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        /* 搜索框 */
-        .search-container {
-            max-width: 600px;
-            margin: 0 auto 3rem auto;
-            position: relative;
-        }
-
-        .search-box {
-            width: 100%;
-            padding: 1rem 1.5rem 1rem 3rem;
-            border: none;
-            border-radius: 50px;
-            background: rgba(0, 0, 0, 0.15);
-            backdrop-filter: blur(3px);
-            color: white;
-            font-size: 1rem;
-            outline: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-
-        .search-box::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .search-box:focus {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .search-icon {
-            position: absolute;
-            left: 1.2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 1.1rem;
+            font-size: 2rem;
+            opacity: 0.8;
+            text-shadow: 2px 1px 5px rgba(224, 205, 95, 0.979);
         }
 
         /* 分组容器 */
@@ -162,12 +124,13 @@
         }
 
         .section-title {
-            color: white;
-            font-size: 1.5rem;
+            color: rgb(243, 53, 126);
+            font-size: 3rem;
             font-weight: 500;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.8;
             text-align: center;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 3 2px 10px rgba(12, 240, 190, 0.3);
             position: relative;
         }
 
@@ -246,7 +209,7 @@
         .card:hover {
             transform: translateY(-8px) scale(1.02);
             background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 20px 60px rgba(145, 83, 83, 0.2);
         }
 
         .card-icon {
@@ -279,16 +242,6 @@
             display: none;
         }
 
-        /* 无结果提示 */
-        .no-results {
-            text-align: center;
-            color: white;
-            font-size: 1.2rem;
-            margin-top: 2rem;
-            opacity: 0.8;
-            display: none;
-        }
-
         /* 响应式设计 */
         @media (max-width: 768px) {
             .container {
@@ -306,14 +259,6 @@
 
             .card {
                 padding: 1.2rem;
-            }
-
-            .search-box {
-                padding: 0.8rem 1.2rem 0.8rem 2.5rem;
-            }
-
-            .search-icon {
-                left: 1rem;
             }
         }
 
@@ -460,40 +405,43 @@
         </div>
     </div>
 
-
-
     <div class="container" id="mainContainer">
         <header class="header">
-            <h1>个人导航中心</h1>
-            <p>快速访问您的所有服务</p>
+            <h1>✈️准备起飞~</h1>
+            <p id="hitokoto"><a id="hitokoto_text">:D 获取中...</a></p>
+<!-- 本例不能添加链接内容，放在此处只是因为此接口比较方便，也许能够解决大部分的需求-->
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
         </header>
 
-        <div class="search-container">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" class="search-box" placeholder="搜索服务..." id="searchInput">
-        </div>
-
         <div id="content"></div>
-
-        <div class="no-results" id="noResults">
-            <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
-            <p>未找到匹配的服务</p>
-        </div>
     </div>
 
     <script>
 
         let config = null;
 
-        function setBackground() {
+        function setBackground(imageUrl) {
             const bgImage = document.getElementById('bgImage');
-            const baseUrl = window.innerWidth <= 768
-                ? 'https://img-api.wuxie.de/acg/13/sp'
-                : 'https://img-api.wuxie.de/acg/13/sp';
-            const imageUrl = `${baseUrl}&t=${Date.now()}`;
-
-            bgImage.style.backgroundImage = `url(${imageUrl})`;
-            bgImage.classList.add('loaded');
+            const img = new Image();
+            img.onload = () => {
+                bgImage.style.backgroundImage = `url(${imageUrl})`;
+                bgImage.classList.add('loaded');
+            };
+            img.onerror = () => {
+                // 如果自定义背景加载失败，回退到默认图
+                const fallbackUrl = `https://app.zichen.zone/api/acg/api.php${Date.now()}`;
+                const fallbackImg = new Image();
+                fallbackImg.onload = () => {
+                    bgImage.style.backgroundImage = `url(${fallbackUrl})`;
+                    bgImage.classList.add('loaded');
+                };
+                fallbackImg.onerror = () => {
+                    // 即使 fallback 也失败，至少显示渐变背景（不加 loaded，保持透明）
+                    bgImage.classList.add('loaded'); // 仍加 loaded 以隐藏 loading，但无图
+                };
+                fallbackImg.src = fallbackUrl;
+            };
+            img.src = imageUrl;
         }
 
         function fetchWithTimeout(url, timeout = 2000) {
@@ -535,7 +483,7 @@
 
         function createCard(item) {
             return `
-                <a href="${item.url}" class="card" target="_blank" data-name="${item.name.toLowerCase()}">
+                <a href="${item.url}" class="card" target="_blank" data-name="${item.name.toLowerCase()}" title="${item.description || item.name}">
                     <div class="card-icon">
                         <i class="${item.icon}"></i>
                     </div>
@@ -549,6 +497,9 @@
             let html = '';
 
             Object.keys(config).forEach(sectionName => {
+                // 排除 backgroundApi 字段
+                if (sectionName === 'backgroundApi') return;
+                
                 html += `
                     <div class="section">
                         <h2 class="section-title">${sectionName}</h2>
@@ -562,53 +513,7 @@
             content.innerHTML = html;
         }
 
-        function setupSearch() {
-            const searchInput = document.getElementById('searchInput');
-            const noResults = document.getElementById('noResults');
-
-            searchInput.addEventListener('input', function () {
-                const query = this.value.toLowerCase().trim();
-                const cards = document.querySelectorAll('.card');
-                const sections = document.querySelectorAll('.section');
-                let hasResults = false;
-
-                if (query === '') {
-                    cards.forEach(card => {
-                        card.classList.remove('hidden');
-                        card.style.display = '';
-                    });
-                    sections.forEach(section => {
-                        section.style.display = '';
-                    });
-                    noResults.style.display = 'none';
-                    return;
-                }
-
-                cards.forEach(card => {
-                    const name = card.dataset.name;
-
-                    if (name.includes(query)) {
-                        card.classList.remove('hidden');
-                        card.style.display = '';
-                        hasResults = true;
-                    } else {
-                        card.classList.add('hidden');
-                        card.style.display = 'none';
-                    }
-                });
-
-                sections.forEach(section => {
-                    const visibleCards = section.querySelectorAll('.card:not(.hidden)');
-                    section.style.display = visibleCards.length > 0 ? '' : 'none';
-                });
-
-                noResults.style.display = hasResults ? 'none' : 'block';
-            });
-        }
-
         async function init() {
-            setBackground();
-
             try {
                 const configPromise = loadConfigWithRetries(`navigation.json?t=${Date.now()}`);
                 const domReadyPromise = new Promise(resolve => {
@@ -625,8 +530,13 @@
                 ]);
 
                 config = loadedConfig;
+
+                // 根据配置设置背景图
+                const bgApi = config.backgroundApi || `https://t.alcy.cc/ycy${Date.now()}`;
+                setBackground(bgApi);
+
                 renderContent();
-                setupSearch();
+                // setupSearch() 已移除
             } catch (err) {
                 console.error('加载配置失败:', err);
                 await new Promise(resolve => {
@@ -636,6 +546,8 @@
                         resolve();
                     }
                 });
+                // 失败时也设一个默认背景
+                setBackground(`https://picsum.photos/1920/1080?random=${Date.now()}`);
                 showRetryCard();
             } finally {
                 setTimeout(() => {
