@@ -1,238 +1,37 @@
 {
-    "网站服务": [
+    "backgroundApi": "https://app.zichen.zone/api/acg/api.php",
+    "🚩导航": [
         {
-            "name": "博客",
-            "url": "https://blog.xxxxx.com/",
-            "icon": "fa-brands fa-blogger"
+            "name": "测试站",
+            "url": "https://www.10240110.xyz/",
+            "icon": "fa-solid fa-book",
+            "description": "用于功能测试的临时站点"
         },
         {
-            "name": "云盘",
-            "url": "https://yun.xxxxx.com/",
-            "icon": "fa-brands fa-cloudflare"
+            "name": "网盘下载",
+            "url": "https://download.ovo-s.com/",
+            "icon": "fa-solid fa-download",
+            "description": "资源文件下载中心"
         },
         {
-            "name": "状态",
-            "url": "https://tz.xxxxx.com/",
-            "icon": "fa-solid fa-chart-column"
-        },
-        {
-            "name": "Jellyfin",
-            "url": "https://jellyfin.xxxxx.com/",
-            "icon": "fa-solid fa-film"
-        },
-        {
-            "name": "IP地址检测",
-            "url": "https://ipgg.cn/",
-            "icon": "fa-solid fa-globe"
-        },
-        {
-            "name": "IPV6测试",
-            "url": "https://v6test.ipgg.cn/",
-            "icon": "fa-solid fa-sliders"
-        },
-        {
-            "name": "工具",
-            "url": "https://tools.xxxxx.com/",
-            "icon": "fa-solid fa-screwdriver-wrench"
-        },
-        {
-            "name": "SSH",
-            "url": "https://ssh.xxxxx.com/",
-            "icon": "fa-solid fa-terminal"
-        },
-        {
-            "name": "搜索",
-            "url": "https://search.xxxxx.com/",
-            "icon": "fa-solid fa-magnifying-glass"
-        },
-        {
-            "name": "图床",
-            "url": "https://img.xxxxx.com/",
-            "icon": "fa-brands fa-cloudflare"
-        },
-        {
-            "name": "文件快递柜",
-            "url": "https://fcb.xxxxx.com/",
-            "icon": "fa-solid fa-file-arrow-up"
-        },
-        {
-            "name": "HomeAssistant",
-            "url": "https://home.xxxxx.com/",
-            "icon": "fa-solid fa-house"
-        },
-        {
-            "name": "远程浏览器",
-            "url": "https://firefox.xxxxx.com/",
-            "icon": "fa-solid fa-globe"
-        },
-        {
-            "name": "Tcping节点",
-            "url": "https://tcping.wuxie.de/",
-            "icon": "fa-solid fa-network-wired"
-        },
-        {
-            "name": "剩余价值计算",
-            "url": "https://surplus.wuxie.de/",
-            "icon": "fa-solid fa-coins"
-        },
-        {
-            "name": "流量消耗",
-            "url": "https://use.wuxie.de/",
-            "icon": "fa-solid fa-tachometer-alt"
-        },
-        {
-            "name": "Wallos",
-            "url": "https://wallos.wuxie.de/",
-            "icon": "fa-brands fa-windows"
-        },
-        {
-            "name": "人工智能",
-            "url": "https://chat.xxxxx.com/",
-            "icon": "fa-solid fa-robot"
-        },
-        {
-            "name": "比特彗星",
-            "url": "https://qb.xxxxx.com/",
-            "icon": "fa-solid fa-bitcoin-sign"
-        },
-        {
-            "name": "Vertex",
-            "url": "https://vertex.xxxxx.com/",
-            "icon": "fa-solid fa-bitcoin-sign"
-        },
-        {
-            "name": "服务监控",
-            "url": "https://kuma.xxxxx.com/status/tz",
-            "icon": "fa-solid fa-server"
-        },
-        {
-            "name": "PDF工具",
-            "url": "https://pdf.xxxxx.com/?lang=zh_CN",
-            "icon": "fa-solid fa-file-pdf"
-        },
-        {
-            "name": "2FA工具",
-            "url": "https://2fa.xxxxx.com/",
-            "icon": "fa-solid fa-key"
-        },
-        {
-            "name": "恋爱主页",
-            "url": "https://www.xxxxxx.xxx/",
-            "icon": "fa-solid fa-flag"
-        },
-        {
-            "name": "网站统计",
-            "url": "https://umami.xxxxx.com/",
-            "icon": "fa-solid fa-chart-line"
-        },
-        {
-            "name": "摄影作品",
-            "url": "https://tuchong.com/28030584/",
-            "icon": "fa-solid fa-camera-retro"
+            "name": "建设中",
+            "url": "https://www.ovo-s.com/",
+            "icon": "fa-solid fa-atom",
+            "description": "网站正在积极开发中"
         }
     ],
-    "穿透服务": [
+    "📧联系": [
         {
-            "name": "OpenWrt",
-            "url": "https://op.xxxxxx.xxx/",
-            "icon": "fa-solid fa-network-wired"
+            "name": "X主页",
+            "url": "https://www.ovo-s.com/",
+            "icon": "fa-brands fa-x-twitter",
+            "description": "访问我们的 X（原 Twitter）主页"
         },
         {
-            "name": "云盘",
-            "url": "https://yun.xxxxxx.xxx/",
-            "icon": "fa-solid fa-cloud"
-        },
-        {
-            "name": "影 视 库 ",
-            "url": "https://movie.xxxxxx.xxx/",
-            "icon": "fa-solid fa-film"
-        },
-        {
-            "name": "Aria2",
-            "url": "https://aria.xxxxxx.xxx/",
-            "icon": "fa-solid fa-download"
-        },
-        {
-            "name": "青龙面板",
-            "url": "https://ql.xxxxxx.xxx/",
-            "icon": "fa-solid fa-list-check"
-        },
-        {
-            "name": "PVE管理",
-            "url": "https://pve.xxxxxx.xxx/",
-            "icon": "fa-solid fa-server"
-        },
-        {
-            "name": "Docker管理",
-            "url": "https://docker.xxxxxx.xxx/",
-            "icon": "fa-brands fa-docker"
-        },
-        {
-            "name": "服务监控",
-            "url": "https://uptime.xxxxxx.xxx/status/tz",
-            "icon": "fa-solid fa-heart-pulse"
-        },
-        {
-            "name": "原神",
-            "url": "https://ys.xxxxxx.xxx/ui/zashboard/",
-            "icon": "fa-solid fa-screwdriver-wrench"
-        },
-        {
-            "name": "家居智能",
-            "url": "https://ass.xxxxxx.xxx/",
-            "icon": "fa-solid fa-house"
-        }
-    ],
-    "内网服务": [
-        {
-            "name": "OpenWrt",
-            "url": "https://op.xxxxx.com/",
-            "icon": "fa-solid fa-network-wired"
-        },
-        {
-            "name": "云盘",
-            "url": "https://lyun.xxxxx.com/",
-            "icon": "fa-solid fa-cloud"
-        },
-        {
-            "name": "影视库",
-            "url": "https://movie.xxxxx.com/",
-            "icon": "fa-solid fa-film"
-        },
-        {
-            "name": "Aria2",
-            "url": "https://aria.xxxxx.com/",
-            "icon": "fa-solid fa-download"
-        },
-        {
-            "name": "青龙面板",
-            "url": "https://ql.xxxxx.com/",
-            "icon": "fa-solid fa-list-check"
-        },
-        {
-            "name": "PVE管理",
-            "url": "https://pve.xxxxx.com/",
-            "icon": "fa-solid fa-server"
-        },
-        {
-            "name": "Docker管理",
-            "url": "https://docker.xxxxx.com/",
-            "icon": "fa-brands fa-docker"
-        },
-        {
-            "name": "服务监控",
-            "url": "https://uptime.xxxxx.com/status/tz",
-            "icon": "fa-solid fa-heart-pulse"
-        },
-        {
-            "name": "原神",
-            "url": "https://ys.xxxxx.com/ui/zashboard/",
-            "icon": "fa-solid fa-screwdriver-wrench"
-        },
-        {
-            "name": "家居智能",
-            "url": "https://ass.xxxxx.com/",
-            "icon": "fa-solid fa-house"
+            "name": "QQ",
+            "url": "https://qm.qq.com/q/R8LaaFaQc6",
+            "icon": "fa-brands fa-qq",
+            "description": "加入我们的 QQ 群聊"
         }
     ]
 }
