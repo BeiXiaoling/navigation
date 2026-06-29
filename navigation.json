@@ -1,37 +1,43 @@
 {
     "backgroundApi": "https://app.zichen.zone/api/acg/api.php",
-    "\ud83d\ude80\u5bfc\u822a": [
+    "🚩导航": [
         {
-            "name": "\u6d4b\u8bd5\u7ad9",
-            "url": "https://www.10240110.xyz/",
+            "name": "测试站",
+            "url": "https://baidu.com",
             "icon": "fa-solid fa-book",
-            "description": "\u7528\u4e8e\u529f\u80fd\u6d4b\u8bd5\u7684\u4e34\u65f6\u7ad9\u70b9"
+            "description": "用于功能测试的临时站点"
         },
         {
-            "name": "\u7f51\u76d8\u4e0b\u8f7d",
-            "url": "https://download.ovo-s.com/",
+            "name": "网盘下载",
+            "url": "https://baidu.com",
             "icon": "fa-solid fa-download",
-            "description": "\u8d44\u6e90\u6587\u4ef6\u4e0b\u8f7d\u4e2d\u5fc3"
+            "description": "资源文件下载中心"
         },
         {
-            "name": "\u5efa\u8bbe\u4e2d",
-            "url": "https://www.ovo-s.com/",
+            "name": "建设中",
+            "url": "https://baidu.com",
+            "icon": "fa-solid fa-bag-shopping",
+            "description": "🐂の发卡小站"
+        },
+        {
+            "name": "建设中",
+            "url": "https://baidu.com",
             "icon": "fa-solid fa-atom",
-            "description": "\u7f51\u7ad9\u6b63\u5728\u79ef\u6781\u5f00\u53d1\u4e2d"
+            "description": "网站正在积极开发中"
         }
     ],
-    "\ud83d\udcdf\u8054\u7cfb": [
+    "📧联系": [
         {
-            "name": "X\u4e3b\u9875",
-            "url": "https://www.ovo-s.com/",
+            "name": "X主页",
+            "url": "https://baidu.com",
             "icon": "fa-brands fa-x-twitter",
-            "description": "\u8bbf\u95ee\u6211\u4eec\u7684 X\uff08\u539f Twitter\uff09\u4e3b\u9875"
+            "description": "访问我的 X 主页"
         },
         {
             "name": "QQ",
-            "url": "https://qm.qq.com/q/R8LaaFaQc6",
+            "url": "https://baidu.com",
             "icon": "fa-brands fa-qq",
-            "description": "\u52a0\u5165\u6211\u4eec\u7684 QQ \u7fa4\u804a"
+            "description": "添加我的QQ:2607791559"
         }
     ]
 }
