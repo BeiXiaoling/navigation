@@ -124,3 +124,21 @@ const baseUrl = 'https://api.example.com/random-wallpaper';
 ---
 
 感谢使用！欢迎 Star ⭐ 支持这个项目！
+
+
+##🤖fork后AI修改了
+
+-让codex写了个小后端，点点点修改
+
+-后台密码设置说明
+部署后设置后台密码的方式是：在服务器上自己生成 .admin_htpasswd。
+例如后台用户名用 admin，密码用 ovos1024：
+cd /opt/1panel/apps/openresty/openresty/www/sites/www.ovo-s.com/index
+
+hash=$(openssl passwd -apr1 'ovos1024')
+echo "admin:$hash" > .admin_htpasswd
+chmod 644 .admin_htpasswd
+如果想换用户名，比如 root：
+hash=$(openssl passwd -apr1 '你的密码')
+echo "root:$hash" > .admin_htpasswd
+chmod 644 .admin_htpasswd
